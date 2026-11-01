@@ -36,3 +36,9 @@ All source files below were recovered from the active Windows workspace or the P
 - `stable`: historical working baseline and source integrity confirmed; not a promise that the current third-party site has unchanged behavior.
 - `preview`: code artifact exists and parses; functional behavior is not certified.
 - `source-only`: code artifact exists without the corresponding original extension manifest.
+## 1.1.1 preview
+
+- Derived from the byte-verified 1.1.0 stable baseline; 1.1.0 files remain unchanged.
+- Fixes CSS that overrode the site's native hidden attribute and created an empty green button.
+- Detects the Kipas main.card[data-smartlink] gate, shows a pending state, and prevents auto-Continue from opening its third-party smartlink.
+- Preview only. It does not solve Cloudflare Turnstile, click ads, or claim verification success.

@@ -7,6 +7,7 @@ Kho lÆ°u trá»¯ chÃ­nh thá»©c cho source extension Kipass. Má»¥c ti�
 | Version | Tráº¡ng thÃ¡i | Ná»™i dung | Báº±ng chá»©ng hiá»‡n cÃ³ |
 |---|---|---|---|
 | [1.1.0](versions/1.1.0-stable/) | Stable / baseline | HUD Match Center + nháº­n diá»‡n tráº¡ng thÃ¡i + auto-Continue cÃ³ Ä‘iá»u kiá»‡n cho nÃºt Continue gá»‘c á»Ÿ bÆ°á»›c 1 vÃ  2 | NgÆ°á»i dÃ¹ng Ä‘Ã£ xÃ¡c nháº­n tá»«ng hoáº¡t Ä‘á»™ng; source Ä‘Æ°á»£c backup vÃ  hash xÃ¡c minh; cÃº phÃ¡p JS PASS |
+| [1.1.1](versions/1.1.1-preview/) | Preview | Fixes hidden-button styling; smartlink verification remains manual | Static checks PASS; browser test pending; not stable |
 | [1.2.0](versions/1.2.0-source-only/) | Source archive | Má»‘c code káº¿ tiáº¿p tÃ¬m tháº¥y trong workspace | CÃ³ `content.js`; manifest gá»‘c khÃ´ng tÃ¬m tháº¥y nÃªn chÆ°a Ä‘Ã³ng gÃ³i/khÃ´ng tuyÃªn bá»‘ installable |
 | [1.3.0](versions/1.3.0-preview/) | Preview | NIGHTSHIFT visual skin | JS syntax + manifest JSON PASS; chÆ°a cÃ³ functional PASS |
 | [1.3.1](versions/1.3.1-preview/) | Preview | NIGHTSHIFT + nháº­n diá»‡n progress `1-of-3` / `1/3` | JS syntax + manifest JSON PASS; chÆ°a cÃ³ functional PASS |

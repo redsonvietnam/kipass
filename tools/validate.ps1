@@ -28,5 +28,10 @@ Get-ChildItem (Join-Path $root 'versions') -Directory | Sort-Object Name | ForEa
         Write-Host "Manifest absent; source archive only: $($_.Name)"
     }
 }
+$previewTest = Join-Path $PSScriptRoot 'test-1.1.1-preview.ps1'
+if (Test-Path $previewTest) {
+    & $previewTest
+    if ($LASTEXITCODE -ne 0) { $failed = $true }
+}
 if ($failed) { exit 1 }
 Write-Host 'STATIC VALIDATION PASS. Browser behavior is not tested by this script.'

@@ -5,6 +5,7 @@ Last reviewed: 2026-11-01
 | Version | JS syntax | Manifest JSON | Installed | Live functional flow | Classification |
 |---|---|---|---|---|---|
 | 1.1.0 | PASS | PASS | PASS on Titanium (unpacked source path verified) | Historical success reported by user; current session remained at `READY FOR KICK-OFF`, with no step transition observed during ~50 seconds | Stable baseline, current compatibility re-test needed |
+| 1.1.1 | PASS | PASS | Installed and enabled on Titanium; 1.1.0 retained but disabled | Browser test pending; requires a fresh game link | Preview |
 | 1.2.0 | PASS | N/A (original manifest unavailable) | Not certified | Not tested | Source-only archive |
 | 1.3.0 | PASS | PASS | Not certified in current target | Not tested end-to-end | Preview |
 | 1.3.1 | PASS | PASS | Not certified in current target | Not tested end-to-end | Preview |
@@ -32,3 +33,10 @@ Last reviewed: 2026-11-01
 4. Native Continue only proceeds when the site marks the step complete and the button is enabled.
 5. CAPTCHA/human checks remain visible and manual.
 6. Browser/device/orientation and regression results are recorded before promotion.
+## 1.1.1 preview — 2026-11-01
+
+- Static source is derived from the verified 1.1.0 baseline; stable SHA-256 remains unchanged.
+- The live Titanium page showed a blank green control. Source inspection traced it to the theme display rule overriding the site's initially hidden button.
+- The page source declares a Turnstile site key and a data-smartlink destination; the native success action can open that destination in a new tab. The preview therefore suppresses automation on this gate.
+- CAPTCHA/human verification and smartlink/ad actions remain manual.
+- Static syntax, manifest, and preview regression checks PASS; 1.1.1 is installed and enabled on Titanium. End-to-end browser test requires a fresh game link.

@@ -1,5 +1,8 @@
 82f8300e8e54d576058978f89855298d780ca4920316abd0bf6eb030f2ba55f6  versions/1.1.0-stable/content.js
 11ddc55d14f1a30c1c2221cb58888028dc916ea07ff53f6cf9036ff610227a23  versions/1.1.0-stable/manifest.json
+19f9da176242c245c9a7dbb01e9e46f05d2ab944a16128e16c89c5f01a12a6eb  versions/1.1.1-preview/content.js
+95ee35248077add72e5fae1ed019fbacdad34d08dcbe7c184869ca9844ae7419  versions/1.1.1-preview/manifest.json
+17edc96e840297865a736d04135fa8d35b3c62415e394d5a7d5f75e177c67f15  versions/1.1.1-preview/README.md
 476d97e717b55f86abf6c0f40e7e5e003a98ea7c1a5bfdc40eb693e89ca62c82  versions/1.2.0-source-only/content.js
 9aa2784e036d21d13a1a31aec1ac97afcf23f0784420356b44d5004e56ee6321  versions/1.3.0-preview/content.js
 29b54f293f8d22fd95ec660c04f0581415f13d67dbc3ed730b3624e6d485c8ca  versions/1.3.0-preview/manifest.json

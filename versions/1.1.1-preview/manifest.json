@@ -1,0 +1,19 @@
+{
+    "manifest_version":  3,
+    "name":  "Kipass Preview 1.1.1",
+    "short_name":  "Kipass",
+    "version":  "1.1.1",
+    "description":  "Preview: fixes hidden controls and keeps smartlink verification actions manual.",
+    "content_scripts":  [
+                            {
+                                "run_at":  "document_idle",
+                                "matches":  [
+                                                "https://kipascommunity.com/verify/*",
+                                                "https://www.kipascommunity.com/verify/*"
+                                            ],
+                                "js":  [
+                                           "content.js"
+                                       ]
+                            }
+                        ]
+}
