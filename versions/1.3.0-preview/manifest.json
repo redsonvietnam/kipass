@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Kipass NIGHTSHIFT Stadium Skin",
+  "short_name": "Kipass",
+  "version": "1.3.0",
+  "description": "Experimental visual skin based on the verified 1.1.0 flow. Keeps real human checks visible and manual.",
+  "content_scripts": [{
+    "matches": ["https://kipascommunity.com/verify/*", "https://www.kipascommunity.com/verify/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}

@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Kipass — by Fesdinang",
+  "short_name": "Kipass",
+  "version": "1.1.0",
+  "description": "PES-inspired Match Center HUD with English football commentary and timed native Continue flow.",
+  "content_scripts": [{
+    "matches": ["https://kipascommunity.com/verify/*", "https://www.kipascommunity.com/verify/*"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
