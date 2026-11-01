@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VerifyGuard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-mark">VG</div>
+      <div>
+        <h1>VerifyGuard</h1>
+        <p>Trợ lý xác minh an toàn</p>
+      </div>
+      <span class="version">0.1.0</span>
+    </header>
+
+    <section class="site-card">
+      <div class="eyebrow">TRANG HIỆN TẠI</div>
+      <div id="siteName" class="site-name">Chưa đọc được tab</div>
+      <div id="siteUrl" class="site-url">Bấm Phân tích trang để bắt đầu.</div>
+    </section>
+
+    <section class="actions">
+      <button id="scanBtn" class="primary">Phân tích trang</button>
+      <button id="clearBtn" class="secondary">Xóa đánh dấu</button>
+    </section>
+
+    <section class="guard-row">
+      <div>
+        <strong>Bảo vệ click quảng cáo rõ ràng</strong>
+        <p>Chỉ giữ lại liên kết có dấu hiệu quảng cáo mạnh; không chặn nút verify.</p>
+      </div>
+      <label class="switch" aria-label="Bật bảo vệ click quảng cáo">
+        <input id="guardToggle" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <div id="status" class="status" role="status">Sẵn sàng. Không tự click hoặc tự hoàn tất verify.</div>
+
+    <section id="summary" class="summary hidden" aria-live="polite">
+      <div class="stat"><strong id="verifyCount">0</strong><span>ứng viên verify</span></div>
+      <div class="stat"><strong id="adCount">0</strong><span>liên kết quảng cáo</span></div>
+      <div class="stat"><strong id="overlayCount">0</strong><span>lớp phủ</span></div>
+    </section>
+
+    <section id="warning" class="warning hidden"></section>
+    <section id="results" class="results"></section>
+
+    <footer>
+      <span>Dữ liệu phân tích lưu cục bộ trên trình duyệt.</span>
+      <span>Không giả CAPTCHA · Không giả verify</span>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

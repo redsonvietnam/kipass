@@ -1,0 +1,47 @@
+{
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "description": "Ẩn lớp quảng cáo phủ và liên kết quảng cáo đã nhận diện trên Kipas; giữ nguyên các nút xác minh.",
+  "short_name": "VerifyGuard",
+  "manifest_version": 3,
+  "version": "0.3.0",
+  "host_permissions": [
+    "https://kipascommunity.com/*",
+    "https://rm358.com/*",
+    "https://faxro.com/*"
+  ],
+  "name": "VerifyGuard — Safe Verification Assistant",
+  "minimum_chrome_version": "102",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "VerifyGuard"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": [
+        "https://kipascommunity.com/*",
+        "https://rm358.com/*",
+        "https://faxro.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}

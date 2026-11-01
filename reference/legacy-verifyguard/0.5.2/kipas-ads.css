@@ -1,0 +1,24 @@
+/* VerifyGuard 0.4.0 — only confirmed Kipas ad containers on /verify/. */
+.ad,
+.ad.wide,
+[id^="atLink-"],
+[id^="atContainer-"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.ad iframe,
+.ad.wide iframe {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
